@@ -1,0 +1,146 @@
+export interface SkillDefinition {
+  name: string;
+  category: 'Programming Languages' | 'AI / Machine Learning' | 'Web & Backend' | 'Cloud & DevOps' | 'Databases' | 'Tools & Methodologies';
+  aliases: string[];
+}
+
+export const SKILLS_TAXONOMY: SkillDefinition[] = [
+  // Programming Languages
+  { name: 'Python', category: 'Programming Languages', aliases: ['python3', 'py', 'cpython'] },
+  { name: 'JavaScript', category: 'Programming Languages', aliases: ['js', 'es6', 'es2020', 'ecmascript'] },
+  { name: 'TypeScript', category: 'Programming Languages', aliases: ['ts'] },
+  { name: 'Java', category: 'Programming Languages', aliases: ['core java', 'j2ee', 'jdk', 'jvm'] },
+  { name: 'C++', category: 'Programming Languages', aliases: ['cpp', 'c/c++'] },
+  { name: 'C#', category: 'Programming Languages', aliases: ['csharp', '.net c#'] },
+  { name: 'C', category: 'Programming Languages', aliases: ['c language', 'ansi c'] },
+  { name: 'Go', category: 'Programming Languages', aliases: ['golang'] },
+  { name: 'Rust', category: 'Programming Languages', aliases: ['rustlang'] },
+  { name: 'SQL', category: 'Programming Languages', aliases: ['structured query language', 't-sql', 'pl/sql'] },
+  { name: 'R', category: 'Programming Languages', aliases: ['r-lang', 'rstats'] },
+  { name: 'PHP', category: 'Programming Languages', aliases: ['php8', 'php7'] },
+  { name: 'Ruby', category: 'Programming Languages', aliases: ['ruby on rails'] },
+  { name: 'Kotlin', category: 'Programming Languages', aliases: ['kotlin/android'] },
+  { name: 'Swift', category: 'Programming Languages', aliases: ['swiftui', 'ios swift'] },
+  { name: 'Scala', category: 'Programming Languages', aliases: ['scala-lang'] },
+  { name: 'Bash', category: 'Programming Languages', aliases: ['shell scripting', 'sh', 'zsh', 'powershell'] },
+  { name: 'HTML5', category: 'Programming Languages', aliases: ['html'] },
+  { name: 'CSS3', category: 'Programming Languages', aliases: ['css', 'scss', 'sass', 'less'] },
+
+  // AI & Machine Learning & Data Science
+  { name: 'Machine Learning', category: 'AI / Machine Learning', aliases: ['ml', 'machine learning algorithms'] },
+  { name: 'Deep Learning', category: 'AI / Machine Learning', aliases: ['neural networks', 'ann', 'cnn', 'rnn', 'lstm'] },
+  { name: 'Natural Language Processing', category: 'AI / Machine Learning', aliases: ['nlp', 'text processing', 'text analytics', 'nlu', 'nlg'] },
+  { name: 'Computer Vision', category: 'AI / Machine Learning', aliases: ['cv', 'image processing', 'object detection', 'image segmentation'] },
+  { name: 'TensorFlow', category: 'AI / Machine Learning', aliases: ['tf', 'tensorflow 2'] },
+  { name: 'PyTorch', category: 'AI / Machine Learning', aliases: ['torch', 'pytorch lightning'] },
+  { name: 'Scikit-learn', category: 'AI / Machine Learning', aliases: ['sklearn', 'scikit learn'] },
+  { name: 'spaCy', category: 'AI / Machine Learning', aliases: ['spacy nlp'] },
+  { name: 'NLTK', category: 'AI / Machine Learning', aliases: ['natural language toolkit'] },
+  { name: 'HuggingFace', category: 'AI / Machine Learning', aliases: ['transformers', 'hugging face', 'hf transformers'] },
+  { name: 'Large Language Models', category: 'AI / Machine Learning', aliases: ['llm', 'llms', 'generative ai', 'genai', 'gpt', 'gemini', 'claude', 'prompt engineering', 'rag'] },
+  { name: 'Sentence Transformers', category: 'AI / Machine Learning', aliases: ['sbert', 'sentence-transformers', 'embeddings', 'vector embeddings'] },
+  { name: 'OpenCV', category: 'AI / Machine Learning', aliases: ['cv2', 'open computer vision'] },
+  { name: 'Pandas', category: 'AI / Machine Learning', aliases: ['pandas library', 'pd'] },
+  { name: 'NumPy', category: 'AI / Machine Learning', aliases: ['numpy library', 'np'] },
+  { name: 'Keras', category: 'AI / Machine Learning', aliases: ['tf.keras'] },
+  { name: 'LangChain', category: 'AI / Machine Learning', aliases: ['langchain', 'langgraph', 'llamaindex', 'llama index'] },
+  { name: 'Vector Databases', category: 'AI / Machine Learning', aliases: ['pinecone', 'chromadb', 'weaviate', 'qdrant', 'milvus', 'faiss'] },
+  { name: 'XGBoost', category: 'AI / Machine Learning', aliases: ['lightgbm', 'catboost', 'gradient boosting'] },
+  { name: 'Data Preprocessing', category: 'AI / Machine Learning', aliases: ['feature engineering', 'data cleaning', 'data transformation'] },
+  { name: 'Model Evaluation', category: 'AI / Machine Learning', aliases: ['hyperparameter tuning', 'cross-validation', 'roc-auc', 'precision-recall', 'confusion matrix'] },
+  { name: 'MLOps', category: 'AI / Machine Learning', aliases: ['mlflow', 'kubeflow', 'dvc', 'wandb', 'model deployment', 'model monitoring'] },
+  { name: 'Data Visualization', category: 'AI / Machine Learning', aliases: ['matplotlib', 'seaborn', 'plotly', 'tableau', 'power bi'] },
+
+  // Web & Backend
+  { name: 'React', category: 'Web & Backend', aliases: ['reactjs', 'react.js', 'react native'] },
+  { name: 'Node.js', category: 'Web & Backend', aliases: ['nodejs', 'node'] },
+  { name: 'Express', category: 'Web & Backend', aliases: ['expressjs', 'express.js'] },
+  { name: 'Flask', category: 'Web & Backend', aliases: ['flask framework', 'flask app'] },
+  { name: 'Django', category: 'Web & Backend', aliases: ['django rest framework', 'drf'] },
+  { name: 'FastAPI', category: 'Web & Backend', aliases: ['fast api'] },
+  { name: 'Next.js', category: 'Web & Backend', aliases: ['nextjs', 'next'] },
+  { name: 'Spring Boot', category: 'Web & Backend', aliases: ['spring', 'java spring', 'spring mvc'] },
+  { name: 'Tailwind CSS', category: 'Web & Backend', aliases: ['tailwindcss', 'tailwind'] },
+  { name: 'REST APIs', category: 'Web & Backend', aliases: ['rest', 'restful', 'restful api', 'api development', 'web services'] },
+  { name: 'GraphQL', category: 'Web & Backend', aliases: ['apollo graphql', 'graphql apis'] },
+  { name: 'Microservices', category: 'Web & Backend', aliases: ['microservice architecture', 'distributed systems'] },
+  { name: 'Vue.js', category: 'Web & Backend', aliases: ['vue', 'vuejs', 'vue 3', 'nuxt'] },
+  { name: 'Angular', category: 'Web & Backend', aliases: ['angularjs', 'angular 2+'] },
+  { name: 'ASP.NET Core', category: 'Web & Backend', aliases: ['asp.net', '.net core'] },
+  { name: 'WebSockets', category: 'Web & Backend', aliases: ['socket.io', 'real-time communication'] },
+  { name: 'Redux', category: 'Web & Backend', aliases: ['redux toolkit', 'zustand', 'state management'] },
+
+  // Cloud & DevOps
+  { name: 'Docker', category: 'Cloud & DevOps', aliases: ['containerization', 'docker compose', 'dockerfile'] },
+  { name: 'Kubernetes', category: 'Cloud & DevOps', aliases: ['k8s', 'container orchestration'] },
+  { name: 'AWS', category: 'Cloud & DevOps', aliases: ['amazon web services', 'ec2', 's3', 'lambda', 'ecs', 'cloudformation'] },
+  { name: 'Google Cloud Platform', category: 'Cloud & DevOps', aliases: ['gcp', 'google cloud', 'cloud run', 'bigquery', 'gke'] },
+  { name: 'Microsoft Azure', category: 'Cloud & DevOps', aliases: ['azure', 'azure devops', 'azure functions'] },
+  { name: 'CI/CD', category: 'Cloud & DevOps', aliases: ['continuous integration', 'continuous deployment', 'github actions', 'jenkins', 'gitlab ci'] },
+  { name: 'Git', category: 'Cloud & DevOps', aliases: ['version control', 'github', 'gitlab', 'bitbucket'] },
+  { name: 'Linux', category: 'Cloud & DevOps', aliases: ['unix', 'ubuntu', 'centos', 'debian', 'shell environment'] },
+  { name: 'Terraform', category: 'Cloud & DevOps', aliases: ['infrastructure as code', 'iac'] },
+  { name: 'Nginx', category: 'Cloud & DevOps', aliases: ['reverse proxy', 'web server', 'apache'] },
+  { name: 'Serverless', category: 'Cloud & DevOps', aliases: ['lambda', 'cloud functions', 'serverless framework'] },
+
+  // Databases
+  { name: 'PostgreSQL', category: 'Databases', aliases: ['postgres', 'psql'] },
+  { name: 'MongoDB', category: 'Databases', aliases: ['nosql', 'mongo', 'mongoose'] },
+  { name: 'MySQL', category: 'Databases', aliases: ['mariadb'] },
+  { name: 'Redis', category: 'Databases', aliases: ['caching', 'redis cache', 'in-memory database'] },
+  { name: 'SQLite', category: 'Databases', aliases: ['sqlite3'] },
+  { name: 'Elasticsearch', category: 'Databases', aliases: ['elk stack', 'kibana', 'opensearch'] },
+  { name: 'Firebase', category: 'Databases', aliases: ['firestore', 'firebase realtime db'] },
+  { name: 'DynamoDB', category: 'Databases', aliases: ['aws dynamodb'] },
+  { name: 'Oracle DB', category: 'Databases', aliases: ['oracle database', 'plsql'] },
+  { name: 'Cassandra', category: 'Databases', aliases: ['apache cassandra'] },
+  { name: 'Database Design', category: 'Databases', aliases: ['schema design', 'normalization', 'indexing', 'query optimization'] },
+
+  // Tools & Methodologies
+  { name: 'Agile / Scrum', category: 'Tools & Methodologies', aliases: ['agile', 'scrum', 'kanban', 'sprint planning', 'jira'] },
+  { name: 'Unit Testing', category: 'Tools & Methodologies', aliases: ['pytest', 'jest', 'junit', 'test driven development', 'tdd', 'integration testing'] },
+  { name: 'System Design', category: 'Tools & Methodologies', aliases: ['high level design', 'hld', 'lld', 'architecture', 'scalability'] },
+  { name: 'Data Structures & Algorithms', category: 'Tools & Methodologies', aliases: ['dsa', 'algorithm design', 'time complexity'] },
+  { name: 'Object-Oriented Programming', category: 'Tools & Methodologies', aliases: ['oop', 'oops', 'design patterns'] },
+  { name: 'Problem Solving', category: 'Tools & Methodologies', aliases: ['analytical skills', 'debugging', 'troubleshooting'] },
+  { name: 'Postman', category: 'Tools & Methodologies', aliases: ['api testing', 'swagger', 'openapi'] },
+  { name: 'Jira', category: 'Tools & Methodologies', aliases: ['confluence', 'issue tracking'] },
+  { name: 'Code Review', category: 'Tools & Methodologies', aliases: ['pull requests', 'clean code', 'refactoring'] }
+];
+
+export const ACTION_VERBS = [
+  'accelerated', 'achieved', 'administered', 'analyzed', 'architected', 'automated',
+  'built', 'calculated', 'centralized', 'championed', 'collaborated', 'configured',
+  'constructed', 'created', 'customized', 'decreased', 'delivered', 'deployed',
+  'designed', 'developed', 'diagnosed', 'directed', 'documented', 'eliminated',
+  'engineered', 'enhanced', 'established', 'evaluated', 'executed', 'expanded',
+  'expedited', 'formulated', 'generated', 'guided', 'implemented', 'improved',
+  'increased', 'initiated', 'innovated', 'inspected', 'installed', 'integrated',
+  'launched', 'led', 'maintained', 'managed', 'maximized', 'mentored', 'minimized',
+  'modernized', 'monitored', 'negotiated', 'optimized', 'orchestrated', 'overhauled',
+  'performed', 'pioneered', 'planned', 'produced', 'programmed', 'prototyped',
+  'published', 'rebuilt', 'redesigned', 'reduced', 'refactored', 'resolved',
+  'restructured', 'revamped', 'scaled', 'scheduled', 'secured', 'simplified',
+  'solved', 'spearheaded', 'standardized', 'streamlined', 'strengthened', 'structured',
+  'supervised', 'trained', 'transformed', 'troubleshot', 'upgraded', 'validated'
+];
+
+export const STOP_WORDS = new Set([
+  'a', 'about', 'above', 'after', 'again', 'against', 'all', 'am', 'an', 'and', 'any', 'are', 'aren\'t', 'as', 'at',
+  'be', 'because', 'been', 'before', 'being', 'below', 'between', 'both', 'but', 'by', 'can', 'can\'t', 'cannot',
+  'could', 'couldn\'t', 'did', 'didn\'t', 'do', 'does', 'doesn\'t', 'doing', 'don\'t', 'down', 'during', 'each',
+  'few', 'for', 'from', 'further', 'had', 'hadn\'t', 'has', 'hasn\'t', 'have', 'haven\'t', 'having', 'he', 'he\'d',
+  'he\'ll', 'he\'s', 'her', 'here', 'here\'s', 'hers', 'herself', 'him', 'himself', 'his', 'how', 'how\'s', 'i',
+  'i\'d', 'i\'ll', 'i\'m', 'i\'ve', 'if', 'in', 'into', 'is', 'isn\'t', 'it', 'it\'s', 'its', 'itself', 'let\'s',
+  'me', 'more', 'most', 'mustn\'t', 'my', 'myself', 'no', 'nor', 'not', 'of', 'off', 'on', 'once', 'only', 'or',
+  'other', 'ought', 'our', 'ours', 'ourselves', 'out', 'over', 'own', 'same', 'shan\'t', 'she', 'she\'d', 'she\'ll',
+  'she\'s', 'should', 'shouldn\'t', 'so', 'some', 'such', 'than', 'that', 'that\'s', 'the', 'their', 'theirs',
+  'them', 'themselves', 'then', 'there', 'there\'s', 'these', 'they', 'they\'d', 'they\'ll', 'they\'re', 'they\'ve',
+  'this', 'those', 'through', 'to', 'too', 'under', 'until', 'up', 'very', 'was', 'wasn\'t', 'we', 'we\'d', 'we\'ll',
+  'we\'re', 'we\'ve', 'were', 'weren\'t', 'what', 'what\'s', 'when', 'when\'s', 'where', 'where\'s', 'which',
+  'while', 'who', 'who\'s', 'whom', 'why', 'why\'s', 'with', 'won\'t', 'would', 'wouldn\'t', 'you', 'you\'d',
+  'you\'ll', 'you\'re', 'you\'ve', 'your', 'yours', 'yourself', 'yourselves',
+  'will', 'shall', 'may', 'might', 'must', 'experience', 'responsible', 'requirements', 'responsibilities',
+  'work', 'working', 'ability', 'candidate', 'seeking', 'strong', 'good', 'skills', 'including', 'years', 'team',
+  'role', 'opportunity', 'company', 'job', 'position', 'plus', 'must', 'preferred', 'qualification', 'qualifications'
+]);

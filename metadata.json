@@ -1,0 +1,6 @@
+{
+  "name": "AI Resume ATS Score Checker",
+  "description": "A portfolio-ready AI system for analyzing resumes against job descriptions with explainable ATS scoring, skill-gap analysis, and actionable improvement recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
