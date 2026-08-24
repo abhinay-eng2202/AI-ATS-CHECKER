@@ -6,6 +6,8 @@ An AI-powered web application that analyzes a resume against a target job descri
 > **Academic Level:** B.Tech Artificial Intelligence & Data Science
 
 ---
+Live Demo:
+https://ai-ats-checker-three.vercel.app/
 
 ## 📌 Project Overview
 
